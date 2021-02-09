@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
@@ -7,21 +7,25 @@
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
   </head>
-  <body>
+  <body class="page-body">
 
-   <header>
-   	<ul>
-   		<li><a href="index.html">Техномарт</a></li>
-   		<li><a href="#">Поиск:</a></li>
-   		<li><a href="#">Закладки: 0</a></li>
-   		<li><a href="#">Корзина: 10</a></li>
-   		<li><a href="blank.html">Оформить заказ</a></li>
+   <header class="main-header">
+   	<ul class="header-list">
+   		<li><a class="main-header-logo" href="index.html">Техномарт</a></li>
+   		<li class="header-item"><a href="#">Поиск:</a></li>
+   		<li class="header-item"><a href="#">Закладки: 0</a></li>
+   		<li class="header-item"><a href="#">Корзина: 10</a></li>
+   		<li class="header-item"><a href="blank.html">Оформить заказ</a></li>
    	</ul>
    	<p>Интернет-магазин <br>
    		строительных материалов <br>
    	и инструментов для ремонта</p>
-   	<a href="tel:+8125550555">+7(812) 555-05-55</a>
+   	<a class="contacts-header" href="tel:+8125550555">+7(812) 555-05-55</a>
    	<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
    	<a href="blank.html">Равшан Джамшутович</a>
    	<ul>
@@ -43,11 +47,12 @@
    	
 
    </header>
-<main>
-	<ul>
-		<li><a href="catalog.html"></a>КАТАЛОГ</li>
-		<li><a href="blank.html"></a>ИНСТРУМЕНТ</li>
-		<li><a href="blank.html" disabe></a>ПЕРФОРМАТОРЫ</li>
+<main class="container">
+	<ul class="bread-crumbs-list
+">
+		<li class="bread-crumbs-list"><a href="catalog.html"></a>КАТАЛОГ</li>
+		<li class="bread-crumbs-list"><a href="blank.html"></a>ИНСТРУМЕНТ</li>
+		<li class="bread-crumbs-list"><a href="blank.html" disabe></a>ПЕРФОРМАТОРЫ</li>
 	</ul>
 
 	<h1>ПЕРФОРАМТОРЫ</h1>
@@ -259,11 +264,13 @@
 </main>
 <footer>
 	<p>© 2010–2019 Компания «Техномарт»  <br>Все права защищены</p>
-	<ul>
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
-		<li><a href="#"></a></li>
+	<div class="footer-social">
+		<ul>
+		<li><a class="social-button" href="#"></a></li>
+		<li><a class="social-button" href="#"></a></li>
+		<li><a class="social-button" href="#"></a></li>
 	</ul>
+	</div>
 	<p>Обратная связь: <br><a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
 	<p>Разработано-<br><a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
 </footer>
