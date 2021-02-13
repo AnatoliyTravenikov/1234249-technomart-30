@@ -8,8 +8,10 @@
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400&display=swap" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
   </head>
   <body class="page-body">
@@ -20,13 +22,15 @@
    		<li class="header-item"><a href="#">Поиск:</a></li>
    		<li class="header-item"><a href="#"></a>Закладки: 0</li>
    		<li class="header-item"><a href="#">Корзина: 0</a></li>
-   		<li class="header-item"><a href="blank.html">Оформить заказ</a></li>
+   		<li class="header-item header-button"><a href="blank.html">Оформить заказ</a></li>
    	</ul>
+   	<div class="header-description">
    	<p>Интернет-магазин <br>
-   		строительных материалов <br>
+   	строительных материалов <br>
    	и инструментов для ремонта</p>
+   	</div>
    	<a class="contacts-header" href="tel:+78125550555">+7(812) 555-05-55</a>
-   	<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+   	<p class="header-paragraph">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
    	<ul>
    		<li><a class="login-link" href="blank.html">Войти</a></li>
    		<li><a class="registration-link" href="blank.html">Регистрация</a></li>
@@ -50,23 +54,23 @@
 	<section class="features">
 		<h2>Выгодные предложения</h2>
 		<ul class="features-list">
-			<li class="feature-item">
+			<li class="feature-item background-color1">
 				<h3>Материалы</h3>
 				<a href="">На любой вкус</a>
 			</li>
-			<li class="feature-item">
+			<li class="feature-item background-color2">
 				<h3>Инструменты</h3>
 				<a href="">На все слчаи</a>
 			</li>
-			<li class="feature-item">
+			<li class="feature-item background-color3">
 				<h3>Техника</h3>
 				<a href="">Для троки</a>
 			</li>
-			<li class="feature-item">
+			<li class="feature-item background-color4">
 				<h3>Скидки 50%</h3>
 				<a href="">На 350 товаров</a>
 			</li>
-			<li class="feature-item">
+			<li class="feature-item background-color5">
 				<h3>Доставка</h3>
 				<a href="">Бесплатно</a>
 			</li>
@@ -81,41 +85,45 @@
 		<a class="button-red" href="catalog.html">Открыть каталог</a>
 		</div>
 	</section>
-	<section class="popular">
-		<h2>Популярные товары:</h2>
-		<a class="button-red" href="catalog.html">Все популярные товары</a>
+	<section>
+		<div class="popular">
+			<h2>Популярные товары:</h2>
+		    <a class="button-red" href="catalog.html">Все популярные товары</a>
+		</div>
 		<ul class="popular-list">
 			<li class="popular-item">
 				<img src="img/snippet-32961 copy 3.png" width="184" height="164" alt="Перфоратор BOSCH  BFG 9000">
 					<h3>Перфоратор BOSCH  BFG 9000</h3>
 					<p>32500 Р.</p>
-					<a href="blank.html">25 500 Р.</a>
+					<a class="productbutton" href="blank.html">25 500 Р.</a>
 			</li>
 			<li class="popular-item">
 				<img src="img/snippet-18927 copy 3.png" width="127" height="112" alt="Перфоратор BOSCH  BFG 3000">
 					<h3>Перфоратор BOSCH  BFG 3000</h3>
 					<p>22 500 Р.</p>
-					<a href="blank.html">15 500 Р.</a>
+					<a class="productbutton" href="blank.html">15 500 Р.</a>
 			</li>
 			<li class="popular-item">
 				<img src="img/snippet-945 copy 2.png" width="144" height="128" alt="Перфоратор BOSCH  BFG 6000">
 					<h3>Перфоратор BOSCH  BFG 6000</h3>
 					<p>30500 Р.</p>
-					<a href="blank.html">25 500 Р.</a>
+					<a class="productbutton" href="blank.html">25 500 Р.</a>
 			</li>
 			<li class="popular-item">
 				<img src="img/snippet-18927 copy 3.png" width="127" height="112" alt="Перфоратор BOSCH  BFG 2000">
 					<h3>Перфоратор BOSCH  BFG 2000</h3>
 					<p>22500 р.</p>
-					<a href="blank.html">12 500 Р.</a>
+					<a class="productbutton" href="blank.html">12 500 Р.</a>
 			</li>
 		</ul>
 
 	</section>
 
-	<div class="popular">
-		<h2>Популярные производители:</h2>
-		<a class="button-red" href="blank.html">Все производители</a>
+	<div>
+		<div>
+			<h2>Популярные производители:</h2>
+		    <a class="button-red" href="blank.html">Все производители</a>
+		</div>
 	    <ul>
 	    	<li class="popular-content"><a href=""><img src="img/bosch.png" width="126" height="37" alt="bosch"></a></li>
 	    	<li class="popular-content"><a href=""><img src="img/Makita.png" width="123" height="40" alt="Makita"></a></li>
@@ -168,30 +176,33 @@
         <a href="blank.html"><img src="img/Слой 5.png" width="300" height="158" alt="Карта"></a>
         <a class="button-red" href="blankhtml">Заблудились? НапиШИТЕ НАМ!</a>
 	</section>
-	<section>
+</main>
+<footer class="main-footer">
+    <section>
 		<section>
 		<a href="index.html">ТЕХНОМАРТ</a>
-		<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+		<p class="footer-paragraph">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
 			<a class="contacts-phone" href="tel:+78125550555"></a>+7 (812) 555-05-55</p>
 			</section>
-			<section>
-				<ul>
+			<div>
+				<ul class="footer-nav-top">
 					<li>Компания</li>
 					<li>Новости</li>
 					<li>Каталог</li>
 					<li>Доставка</li>
 					<li>Контакты</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="footer-nav-bottom">
 					<li>Материалы</li>
 					<li>Техника</li>
 					<li>Инструмент</li>
 					<li>Спецпреложение</li>
 				</ul>
-			</section>
-	</section>
-</main>
-
-<footer class="main-footer">
-	<p>© 2010–2019 Компания «Техномарт»  <br>Все права защищены</p>
+			</div>
+			<div class="bottomfooter">
+				<p>© 2010–2019 Компания «Техномарт»  <br>Все права защищены</p>
 	<div class="footer-social">
 		<ul>
 		<li><a class="social-button" href="#"></a></li>
@@ -201,6 +212,9 @@
 	</div>
 	<p>Обратная связь: <br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
 	<p>Разработано-<br><a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
+			</div>
+	</section>
+	
 </footer>
 <section class="appointment">
   <h2>Форма заявки</h2>

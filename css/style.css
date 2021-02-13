@@ -1,13 +1,14 @@
 /* Variables */
 
 :root {
-  --basic-black: #000000;
-  --basic-extra-dark: #242424;
-  --basic-dark: #aba9a7;
+  --basic-color: #F1F5F7;
+  --basic-extra: #32425C;
+  --basic-dark: #000000;
   --basic-neutral: #e5e5e5;
-  --basic-extra-light: #f8f5f2;
+  --popular: #F9F5F0;
   --basic-white: #ffffff;
-  --special: #663d15;
+  --special: #32425C;
+  --basic-red: #EE3643;
 }
 
 /* Global */
@@ -19,10 +20,7 @@ body {
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
-  color: var(--basic-white);
-  text-transform: uppercase;
-  background-color: var(--basic-white);
+  font-weight: 400;
   background-position: top center;
   background-repeat: no-repeat;
 } 
@@ -31,13 +29,119 @@ img {
   max-width: 100%;
   height: auto;
 }
+a{
+	text-decoration: none;
+	color: var(--basic-white);
+}
+li{
+	list-style-type: none;
+}
+h2{
+	font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #32425C;
+}
+h3{
+	font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--basic-dark);
+}
+.main-header{
+     background-color: #F1F5F7
+
+}
+.main-header-logo{
+	background: #EE3643;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+.header-button{
+	background-color: #63A63E;
+}
+.header-description{
+	font-family: Cuprum;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+/* or 144% */
+    display: flex;
+    align-items: center;
+    color: #EE3643;
+}
+.header-paragraph{
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--basic-extra);
+}
+.login-link{
+	font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+	background: url(Layer 123.png);
+}
+.registration-link{
+	font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.header-list{
+	background-color: #293449;
+	color: white;
+}
+.header-item{
+	font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+	color: var(--basic-white);
+}
+.contacts-header{
+	background: #F3F7F9;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+	color: red;
+
+}
 
 /* Main navigation */
 .main-navigation {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
-  background-color: transparent;
+  background-color: #32425C;
 }
 
 .main-navigation-wrapper {
@@ -65,22 +169,67 @@ img {
 .user-navigation a:focus {
   background-color: var(--basic-extra-dark);
 }
+.popular{
+	background:var(--popular);
+}
 
 /* Features */
-
+.background-color1{
+	background-color: #FFBF47;
+}
+.background-color2{
+	background-color: #3BBCE3;
+}
+.background-color3{
+	background-color: #DC91D8;
+}
+.background-color4{
+	background-color: #8ED78F;
+}
+.background-color5{
+	background-color: #FFBF47;
+}
 .features-list {
   list-style: none;
 }
 
 .feature-item {
-  text-align: center;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
 }
 
 .feature-item h3 {
-  font-size: 30px;
-  line-height: 42px;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
 }
-
+.feature-item a {
+	
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.productbutton{
+background-image: url(../img/red-button.png);
+}
 .index-columns {
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
@@ -93,18 +242,11 @@ img {
   font-size: 30px;
   line-height: 42px;
 }
-
-.news-list {
-  list-style: none;
+.popular-content {
+	background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
 }
-
-/* Gallery */
-
-.gallery-content {
-  background-color: var(--basic-dark);
-  border: 7px solid var(--basic-white);
-}
-
 .button {
   font: inherit;
   text-align: center;
@@ -115,17 +257,21 @@ img {
   border: none;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: var(--special);
+/* service-list */
+.service-list{
+  background: rgba(0, 0, 0, 0.0001);
+  mix-blend-mode: normal;
+  opacity: 0.25;
 }
 
-.button.disabled,
-.button:disabled {
-  cursor: default;
-  opacity: 0.5;
-  background-color: var(--basic-black);
+.service-item{
+	font-family: Cuprum;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 /* Contacts */
@@ -145,15 +291,35 @@ img {
 .appointment-item input:focus {
   border-color: var(--special);
 }
-
-.main-footer {
-  color: var(--basic-white);
-  background-color: var(--basic-extra-dark);
-  background-image: url("../img/pattern-dark.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+.service{
+	background-color: var(--basic-color);
 }
-
+.main-footer {
+background-color: var(--special);
+}
+.footer-paragraph{
+	font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+	color: var(--basic-white);
+}
+.footer-nav-top{
+	font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F1F5F7;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 58px;
+    color: var(--basic-white);
+}
 .footer-contacts a {
   color: var(--basic-white);
   text-decoration: underline;
@@ -176,7 +342,25 @@ img {
   font-size: 14px;
 
 }
+.button-red{
+	background-color: var(--basic-red);
+}
 
+/* Social button */
+
+.bottomfooter{
+background: #293449;
+}
+.footer-nav-bottom{
+	font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFD180; 
+}
 /* Social button */
 
 .social-button {
